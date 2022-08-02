@@ -7,3 +7,13 @@ docker run -d      --name db-for-mangosteen      -e POSTGRES_USER=mangosteen    
 ```bash
 bin/rails s
 ```
+数据库建表
+```bash
+bin/rails g model user email:string name:string
+bin/rails db:migrate
+```
+数据库回滚
+```bash
+/*回滚两步*/
+bin/tails db:rollback step=2  
+```
