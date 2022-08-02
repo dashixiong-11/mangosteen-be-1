@@ -15,5 +15,9 @@ bin/rails db:migrate
 数据库回滚
 ```bash
 /*回滚两步*/
-bin/tails db:rollback step=2  
+bin/rails db:rollback step=2  
+```
+创建路由
+```bash
+bin/rails g controller user
 ```
