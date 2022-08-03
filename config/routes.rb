@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get '/users/:id', to: 'users#show'
 
   namespace :api do
-    namespace :vi do
+    namespace :v1 do
       resources :validation_codes, only: [:create]
       resource :session, only: [:create, :destroy]
       resource :me, only: [:create]
