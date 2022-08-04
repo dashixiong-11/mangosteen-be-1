@@ -32,7 +32,10 @@ development:
 
 test:
   <<: *default
-  database: mangosteen_be_1_test
+  database: mangosteen_test
+  username: mangosteen
+  password: 123456
+  host: db-for-mangosteen
 
 production:
   <<: *default
